@@ -4617,14 +4617,14 @@ const SystemManager = {
 
 
                             platform: 'github',
-                            token: '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',
-                            owner: 'cmsdormitory',
-                            repo: 'dorm-points-backup',
+                            token: '',
+                            owner: '',
+                            repo: '',
 
 
 
                             branch: 'main',
-                            filePath: 'backup/data.json',
+                            filePath: 'points-backup.json',
 
 
 
@@ -7825,16 +7825,15 @@ const SystemManager = {
 
             platform: syncPlatform ? syncPlatform.value : 'github',
 
-            token: syncToken ? syncToken.value : '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',
+            token: syncToken ? syncToken.value : '',
 
-            owner: syncOwner ? syncOwner.value : 'cmsdormitory',
+            owner: syncOwner ? syncOwner.value : '',
 
-            repo: syncRepo ? syncRepo.value : 'dorm-points-backup',
+            repo: syncRepo ? syncRepo.value : '',
 
             branch: syncBranch ? syncBranch.value : 'main',
 
-            filePath: syncFilePath ? syncFilePath.value : 'backup/data.json',
-        
+            filePath: syncFilePath ? syncFilePath.value : 'data/system_backup.json',
 
             connected: false
 
@@ -14709,7 +14708,6 @@ if (document.readyState === 'loading') {
 }
 
 // ===== GitHub 數據持久化管理器 =====
-                            
 const GitHubPersistence = {
     config: {
         token: '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',
