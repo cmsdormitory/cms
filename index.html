@@ -4617,14 +4617,14 @@ const SystemManager = {
 
 
                             platform: 'github',
-                            token: '',
-                            owner: '',
-                            repo: '',
+                            token: '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',
+                            owner: 'cmsdormitory',
+                            repo: 'dorm-points-backup',
 
 
 
                             branch: 'main',
-                            filePath: 'points-backup.json',
+                            filePath: 'backup/data.json',
 
 
 
@@ -7769,13 +7769,13 @@ const SystemManager = {
 
         if (token && config.token) token.value = config.token;
 
-        if (owner) owner.value = config.owner || '';
+        if (owner) owner.value = config.owner || 'cmsdormitory';
 
-        if (repo) repo.value = config.repo || '';
+        if (repo) repo.value = config.repo || 'dorm-points-backup';
 
         if (branch) branch.value = config.branch || 'main';
 
-        if (filePath) filePath.value = config.filePath || 'data/system_backup.json';
+        if (filePath) filePath.value = config.filePath || 'backup/data.json';
 
         this.updateSyncStatusDisplay(config.connected || false);
     },
@@ -7825,15 +7825,16 @@ const SystemManager = {
 
             platform: syncPlatform ? syncPlatform.value : 'github',
 
-            token: syncToken ? syncToken.value : '',
+            token: syncToken ? syncToken.value : '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',
 
-            owner: syncOwner ? syncOwner.value : '',
+            owner: syncOwner ? syncOwner.value : 'cmsdormitory',
 
-            repo: syncRepo ? syncRepo.value : '',
+            repo: syncRepo ? syncRepo.value : 'dorm-points-backup',
 
             branch: syncBranch ? syncBranch.value : 'main',
 
-            filePath: syncFilePath ? syncFilePath.value : 'data/system_backup.json',
+            filePath: syncFilePath ? syncFilePath.value : 'backup/data.json',
+        
 
             connected: false
 
@@ -14708,6 +14709,7 @@ if (document.readyState === 'loading') {
 }
 
 // ===== GitHub 數據持久化管理器 =====
+                            
 const GitHubPersistence = {
     config: {
         token: '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',
