@@ -33,6 +33,7 @@ Maintainer: @JasonChow in 2F
 For custom features or deployment help, open an Issue or reach out via the contact listed in the repository.
 
 ## Finally
-You can see the picture ，it is so cool :)
-If you have question ，you can find Mr.Wong
+If you have any ideas ，welcome to find our wonderful interesting guys：Mr Wong ChiFei ：）
+
+TIP：index.html is not the latest ，dont worry guys.
 
